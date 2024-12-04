@@ -36,13 +36,12 @@
 ![Grouping_Substrate_Mat](https://github.com/Pratik872/Aspect-Ratio-Prediction-for-DED/blob/main/images/substrate_material_grp.png)
 
 3. Feature Transformation:
-   - Applied Box-Cox transformation to handle skewness in:
-     * Spot Size
-     * Power
-     * Mass Flowrate
-     * Travel Velocity
-     * Height
-     * Width
+   - Applied Box-Cox transformation(due to data being positively skewed) to handle skewness in: Spot Size, Power, Mass Flowrate, Travel Velocity, Height, Width
+
+   ![Trasform1](https://github.com/Pratik872/Aspect-Ratio-Prediction-for-DED/blob/main/images/box_cox_transformation.png)
+   ![Trasform2](https://github.com/Pratik872/Aspect-Ratio-Prediction-for-DED/blob/main/images/box_cox_transformation.png)
+   ![Trasform3](https://github.com/Pratik872/Aspect-Ratio-Prediction-for-DED/blob/main/images/box_cox_transformation.png)
+    
 
 ### Feature Selection
 - Used Mutual Information to identify important features
