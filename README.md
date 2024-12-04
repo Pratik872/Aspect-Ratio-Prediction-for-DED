@@ -1,6 +1,6 @@
 # Additive Manufacturing Aspect Ratio Prediction
 
-##Try it out ![here](https://aspect-ratio-prediction.streamlit.app/)
+## Try it out [here](https://aspect-ratio-prediction.streamlit.app/)
 
 ## Overview
 - The dataset consists of records for different powder materials, substrate materials, process parameters (spot size, power, mass flowrate, travel velocity) and geometric measurements (height, width).
