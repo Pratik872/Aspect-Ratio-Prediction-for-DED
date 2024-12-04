@@ -17,7 +17,7 @@
 
 ### Data Preprocessing
 1. Handling Missing Values:
-   - Spot Size (21% missing) - Imputed using KNN imputation
+   - Spot Size (21% missing), Width and Height(9.30 % missing), Contact Angle(31.52% missing) - Imputed using KNN imputation
    - Aspect Ratio (18% missing) - Removed rows with missing target values
    
 2. Feature Engineering:
@@ -32,6 +32,8 @@
      * Steel-based (316L, Stainless Steel, Steel)
      * Nickel-based (Inconel 738)
      * Titanium-based (Ti-6Al-4V)
+![Grouping_Powder_Mat](https://github.com/Pratik872/Aspect-Ratio-Prediction-for-DED/blob/main/images/powder_material_grp.png)
+![Grouping_Substrate_Mat](https://github.com/Pratik872/Aspect-Ratio-Prediction-for-DED/blob/main/images/substrate_material_grp.png)
 
 3. Feature Transformation:
    - Applied Box-Cox transformation to handle skewness in:
