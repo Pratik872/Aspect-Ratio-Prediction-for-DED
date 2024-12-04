@@ -15,6 +15,25 @@
 
 ## Methodology
 
+### Exploratory Data Analysis
+1. Histograms:
+![histograms](https://github.com/Pratik872/Aspect-Ratio-Prediction-for-DED/blob/main/images/histograms.png)
+
+Most of the features are positively skewed.
+
+2. Box Plots:
+![box](https://github.com/Pratik872/Aspect-Ratio-Prediction-for-DED/blob/main/images/box_plots.png)
+
+Outliers are present.
+
+3. Count Plots:
+![count_plot](https://github.com/Pratik872/Aspect-Ratio-Prediction-for-DED/blob/main/images/count_plots.png)
+
+There is imbalance in data
+
+4. Target Variable Distribution:
+![target_dist](https://github.com/Pratik872/Aspect-Ratio-Prediction-for-DED/blob/main/images/arget_var_dist.png)
+
 ### Data Preprocessing
 1. Handling Missing Values:
    - Spot Size (21% missing), Width and Height(9.30 % missing), Contact Angle(31.52% missing) - Imputed using KNN imputation
@@ -38,38 +57,34 @@
 3. Feature Transformation:
    - Applied Box-Cox transformation(due to data being positively skewed) to handle skewness in: Spot Size, Power, Mass Flowrate, Travel Velocity, Height, Width
 
-   ![Trasform1](https://github.com/Pratik872/Aspect-Ratio-Prediction-for-DED/blob/main/images/box_cox_transformation.png)
-   ![Trasform2](https://github.com/Pratik872/Aspect-Ratio-Prediction-for-DED/blob/main/images/box_cox_transformation.png)
-   ![Trasform3](https://github.com/Pratik872/Aspect-Ratio-Prediction-for-DED/blob/main/images/box_cox_transformation.png)
+   ![Trasform1](https://github.com/Pratik872/Aspect-Ratio-Prediction-for-DED/blob/main/images/transform1.png)
+   ![Trasform2](https://github.com/Pratik872/Aspect-Ratio-Prediction-for-DED/blob/main/images/transform2.png)
+   ![Trasform3](https://github.com/Pratik872/Aspect-Ratio-Prediction-for-DED/blob/main/images/transform3.png)
     
 
 ### Feature Selection
 - Used Mutual Information to identify important features
-- [Include feature importance plot]
-- Key features identified: [List top features]
+![Feat_Importances](https://github.com/Pratik872/Aspect-Ratio-Prediction-for-DED/blob/main/images/feature%20importances.png)
 
 ### Model Development
 Implemented and compared multiple models:
 1. Linear Regression
 2. Random Forest
-3. AdaBoost
-4. XGBoost
+3. XGBoost
 
 ### Hyperparameter Tuning
 - Used GridSearchCV for optimization
 - Parameters tuned:
   * Random Forest: n_estimators, max_depth, min_samples_split, min_samples_leaf
-  * AdaBoost: n_estimators, learning_rate, loss
-  * XGBoost: n_estimators, max_depth, learning_rate, subsample, colsample_bytree
+  * XGBoost: n_estimators, max_depth, learning_rate, subsample
 
 ## Results
-[Include results table showing model performance]
-- Best performing model: [Model name]
-- Test R² Score: [Score]
-- RMSE: [Score]
+![result_bar_plot](https://github.com/Pratik872/Aspect-Ratio-Prediction-for-DED/blob/main/images/model%20comparison.png)
 
 ### Model Performance Visualization
-[Include actual vs predicted plots]
+![linear_reg_plots](https://github.com/Pratik872/Aspect-Ratio-Prediction-for-DED/blob/main/images/linear%20reg%20pred%20plots.png)
+![rf_plots](https://github.com/Pratik872/Aspect-Ratio-Prediction-for-DED/blob/main/images/random%20forests%20pred%20plots.png)
+![xg_plots](https://github.com/Pratik872/Aspect-Ratio-Prediction-for-DED/blob/main/images/xgboost%20pred%20plots.png)
 
 ## Built with 🛠️
 - Python
