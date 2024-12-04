@@ -89,7 +89,4 @@ Implemented and compared multiple models:
 ## Built with 🛠️
 - Python
 - Libraries: pandas, numpy, scikit-learn, xgboost, seaborn, matplotlib
-- Development environment: [Your IDE]
-
-## Future Improvements
-- [List potential improvements]
+- Development environment: Visual Studio Code
