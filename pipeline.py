@@ -258,8 +258,7 @@ class AspectRatioPredictionPipeline():
         except Exception as e:
             raise RuntimeError(f"Error during prediction: {str(e)}")
         
-'''
-Example usage
+
 input_parameters = {
     'Power (W)': 200,
     'Mass Flowrate (g/min)': 2.5,
@@ -277,5 +276,5 @@ prediction, info = pipeline.predict(input_parameters, 'xgboost')
 print(f"Predicted Aspect Ratio: {prediction:.4f}")
 print("\nPrediction Details:")
 for key, value in info.items():
-    print(f"{key}: {value}")'''
+    print(f"{key}: {value}")
     
